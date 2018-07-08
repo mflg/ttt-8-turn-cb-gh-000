@@ -17,6 +17,7 @@ def position_taken?(board, position)
 end
 
 def move(board, position, element="X")
+  
 
 end
 
