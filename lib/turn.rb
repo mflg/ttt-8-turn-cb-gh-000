@@ -24,14 +24,18 @@ def move(board, position, element="X")
   board[position] = element
 end
 
-def turn(board)
+def ask_position()
   puts "Please enter 1-9:"
   position = gets.strip
+end
+
+def turn(board)
+  ask_position
   index = input_to_index(position)
   if valid_move?(index)
     move(board,index)
     display_board(board)
   else
-
+    ask_position
   end
 end
