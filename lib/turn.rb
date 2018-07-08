@@ -9,11 +9,11 @@ def display_board(board)
 end
 
 def valid_move?(board, position)
-  
+    position>=0 && position<9 && !position_taken?
 end
 
 def position_taken?(board, position)
-
+  !(!board[position] || board[position]==nil|| board[position]==" " || board[position] == "")
 end
 
 def move(board, position, element="X")
