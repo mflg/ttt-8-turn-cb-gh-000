@@ -13,7 +13,7 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, position)
-    position>=0 && position<9 && !position_taken?
+    position>=0 && position<9 && !position_taken?(board,position)
 end
 
 def position_taken?(board, position)
