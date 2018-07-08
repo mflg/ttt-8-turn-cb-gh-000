@@ -23,7 +23,7 @@ end
 def move(board, position, element="X")
   index = input_to_index(position)
   if valid_move?(board,index)
-    board[position] = element
+    board[index] = element
   else
 
   end
