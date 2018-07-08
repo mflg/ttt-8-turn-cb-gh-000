@@ -21,13 +21,7 @@ def position_taken?(board, position)
 end
 
 def move(board, position, element="X")
-  index = input_to_index(position)
-  if valid_move?(board,index)
-    board[index] = element
-  else
-
-  end
-
+  board[position] = element
 end
 
 def turn
