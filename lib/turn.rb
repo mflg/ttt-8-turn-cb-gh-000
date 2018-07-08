@@ -36,6 +36,6 @@ def turn(board)
     move(board,index)
     display_board(board)
   else
-    ask_position
+    turn (board)
   end
 end
