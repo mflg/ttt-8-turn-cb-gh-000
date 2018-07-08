@@ -23,6 +23,10 @@ end
 def move(board, position, element="X")
   if valid_move?(board,position)
 
+  else
+
+  end
+
 end
 
 def turn
