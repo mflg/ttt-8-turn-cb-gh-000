@@ -18,6 +18,7 @@ end
 
 def move(board, position, element="X")
 
+end
 
 def turn
 
