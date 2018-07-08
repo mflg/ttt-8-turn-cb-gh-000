@@ -26,11 +26,11 @@ end
 
 def ask_position()
   puts "Please enter 1-9:"
-  position = gets.strip
+  gets.strip
 end
 
 def turn(board)
-  ask_position
+  position = ask_position
   index = input_to_index(position)
   if valid_move?(index)
     move(board,index)
